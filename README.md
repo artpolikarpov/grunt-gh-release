@@ -25,7 +25,7 @@ In your project’s `Gruntfile.js`, add a section named `gh_release` to the data
 grunt.initConfig({
   gh_release: {
     options: {
-      // All is required
+      // Credentials, required
       token: '...',
       owner: 'owner',
       repo: 'repo'
