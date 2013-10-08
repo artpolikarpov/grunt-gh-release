@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       main: {
-        files: ['tasks/tweet.js'],
+        files: ['tasks/<%= pkg.name.replace(/^grunt-/, "").replace(/-/g, "_") %>.js'],
         tasks: defaultTasks
       }
     },
