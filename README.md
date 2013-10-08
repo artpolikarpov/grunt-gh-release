@@ -50,6 +50,33 @@ grunt.initConfig({
 });
 ```
 
+### API token
+
+Create [your own personal API token](https://github.com/settings/applications) for use in the `options.token`. Be careful, these tokens are like passwords so you should guard them carefully.
+
+The best practice is to store token in separate gitignored-file, `secret.json` for example:
+
+```json
+{
+  "gh_token": "f682bb3c305f65d8f6cfffea29f2a7e2b8b0c11a"
+}
+```
+
+…and then to read it in `Gruntfile.js` like so:
+
+```js
+grunt.initConfig({
+  gh_release: {
+    options: {
+      token: grunt.file.readJSON('secret.json').gh_token,
+      owner: 'owner',
+      repo: 'repo'
+    },
+    release: { /**/ }
+  }
+})
+```
+
 ## Release History
 ### 0.0.1, Oct 8 2013
 Initial commit.
