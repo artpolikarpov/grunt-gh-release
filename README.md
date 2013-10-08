@@ -17,7 +17,7 @@ After that it may be enabled inside your Gruntfile with this line of JavaScript:
 grunt.loadNpmTasks('grunt-gh-release');
 ```
 
-## The “gh_release” task
+## The `gh_release` task
 
 In your project’s `Gruntfile.js`, add a section named `gh_release` to the data object passed into `grunt.initConfig()`.
 
@@ -34,7 +34,7 @@ grunt.initConfig({
       // Release input
       // All options are optional, details: http://developer.github.com/v3/repos/releases/#input-1
       tag_name: '0.0.1',
-      target_commitish: ''
+      target_commitish: 'master',
       name: 'Initial release',
       body: 'Description of the release.',
       draft: false,
