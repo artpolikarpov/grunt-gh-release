@@ -17,7 +17,7 @@ After that it may be enabled inside your Gruntfile with this line of JavaScript:
 grunt.loadNpmTasks('grunt-gh-release');
 ```
 
-## The `gh_release` task
+## The “gh_release” task
 
 In your project’s `Gruntfile.js`, add a section named `gh_release` to the data object passed into `grunt.initConfig()`.
 
@@ -52,7 +52,7 @@ grunt.initConfig({
 
 ### API token
 
-Create [your own personal API token](https://github.com/settings/applications) for use in the `options.token`. Be careful, these tokens are like passwords so you should guard them carefully.
+Create [your own personal API token](https://github.com/settings/applications) for use in the `options.token`. Be careful, token are like password so you should guard it carefully.
 
 The best practice is to store token in separate gitignored-file, `secret.json` for example:
 
