@@ -28,7 +28,7 @@
     "grunt-contrib-watch": "~0.5.3"
   },
   "peerDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": ">=0.4.0",
     "curlrequest": "~0.3.10",
     "underscore": "^1.6.0"
   },
